@@ -43,7 +43,7 @@ public class MemberController {
 
     }
 
-    @RequestMapping(value = "/membergetall", method = RequestMethod.GET)
+    @RequestMapping(value = "/membergetid", method = RequestMethod.GET)
     public Member memberByid(@RequestParam("id")long id){
         return memberService.getMeemberById(id);
     }
