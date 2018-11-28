@@ -33,7 +33,7 @@ public class PengeluaranService implements PengeluaranDao {
     }
 
     @Override
-    public void deletePengeluaran(long id) {
+    public void deletePengeluaranbyid(long id) {
         pengeluaranRepository.deleteById(id);
     }
 

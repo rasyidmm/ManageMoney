@@ -38,8 +38,8 @@ public class MemberController {
         return true;
     }
     @RequestMapping(value = "/memberall", method = RequestMethod.GET)
-    public List<Member> memberAll(){
-        return memberService.getAllMember();
+    public List<Login> memberAll(){
+        return loginService.getAllLogin();
 
     }
 

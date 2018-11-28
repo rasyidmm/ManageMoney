@@ -11,7 +11,7 @@ public interface PengeluaranDao {
 
     public void SaveOrUpdate(Pengeluaran p);
 
-    public void deletePengeluaran(long id);
+    public void deletePengeluaranbyid(long id);
 
     public void deletePengeluaran(Pengeluaran p);
 }

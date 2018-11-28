@@ -1,6 +1,8 @@
 package com.MM.projek.model;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.io.Serializable;
 import java.util.List;
 import javax.persistence.Entity;
@@ -16,13 +18,13 @@ import javax.persistence.OneToOne;
  */
 @Entity
 public class Member extends Additional implements Serializable {
-
+    @JsonIgnore
     @OneToMany(mappedBy = "member")
     private List<Pengeluaran> pengeluarans;
-
+    @JsonIgnore
     @OneToMany(mappedBy = "member")
     private List<Dompet> dompets;
-
+    @JsonIgnore
     @OneToOne(mappedBy = "member")
     private Login login;
 
